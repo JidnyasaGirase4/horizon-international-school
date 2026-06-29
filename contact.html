@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Horizon International School</title>
+  <meta name="description" content="Contact Horizon International School — reach our admissions office, general enquiry and careers teams. Find our address, phone, email, working hours and location map." />
+  <meta property="og:title" content="Horizon International School" />
+  <meta property="og:description" content="Inspiring Minds, Building Future Leaders. Admissions open 2026." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- 1. TOP HEADER -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__contact">
+        <a href="tel:+911234567890"><i class="fa-solid fa-phone"></i> +91 12345 67890</a>
+        <a class="email" href="mailto:info@horizonschool.edu"><i class="fa-solid fa-envelope"></i> info@horizonschool.edu</a>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badge"><i class="fa-solid fa-bullhorn"></i> Admissions Open 2026</span>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. NAVIGATION -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo"><i class="fa-solid fa-graduation-cap"></i> Horizon<span>School</span></a>
+      <nav>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="campus.html">Campus</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-controls="navMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner" style="--banner-img:url('images/campus-building.jpg')">
+    <div class="container"><h1>Contact Us</h1><div class="crumbs"><a href="index.html">Home</a> / Contact</div></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Get in Touch</span><h2>Contact Us</h2><p>We'd love to hear from you — reach out and our team will respond shortly.</p></div>
+      <div class="contact-grid">
+        <div class="reveal reveal--left">
+          <div class="contact-cards">
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-location-dot"></i></span><div><strong>Visit Us</strong><p>123 Education Avenue, Knowledge City, India 400001</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-phone"></i></span><div><strong>Call Us</strong><p>+91 12345 67890</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-envelope"></i></span><div><strong>Email Us</strong><p>info@horizonschool.edu</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-clock"></i></span><div><strong>Working Hours</strong><p>Mon–Fri: 8:00 AM – 4:00 PM · Sat: 8:00 AM – 12:00 PM</p></div></div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="form contact-form reveal reveal--right" data-validate novalidate>
+          <h3>Send us a Message</h3>
+          <div class="row">
+            <div class="field"><label for="cn">Name</label><input id="cn" type="text" required /><span class="error">Please enter your name.</span></div>
+            <div class="field"><label for="ce">Email</label><input id="ce" type="email" required /><span class="error">Enter a valid email.</span></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="cp">Phone</label><input id="cp" type="tel" /><span class="error">Enter a valid phone number.</span></div>
+            <div class="field"><label for="cs">Subject</label><input id="cs" type="text" /><span class="error">Please enter a subject.</span></div>
+          </div>
+          <div class="field"><label for="cm">Message</label><textarea id="cm" required></textarea><span class="error">Please enter a message.</span></div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <iframe class="map reveal" src="https://www.google.com/maps?q=delhi&output=embed" loading="lazy" title="School location map"></iframe>
+    </div>
+  </section>
+
+  <!-- QUICK CONTACT CARDS -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Direct Lines</span><h2>Quick Contact</h2><p>Connect with the right department for a faster response.</p></div>
+      <div class="grid grid-3">
+        <div class="card feature reveal reveal--left d1"><div class="feature__icon"><i class="fa-solid fa-user-graduate"></i></div><h3>Admissions Office</h3><p><a href="tel:+911234567891">+91 12345 67891</a></p><p><a href="mailto:admissions@horizonschool.edu">admissions@horizonschool.edu</a></p></div>
+        <div class="card feature reveal d2"><div class="feature__icon"><i class="fa-solid fa-circle-info"></i></div><h3>General Enquiry</h3><p><a href="tel:+911234567890">+91 12345 67890</a></p><p><a href="mailto:info@horizonschool.edu">info@horizonschool.edu</a></p></div>
+        <div class="card feature reveal reveal--right d3"><div class="feature__icon"><i class="fa-solid fa-briefcase"></i></div><h3>Careers</h3><p><a href="tel:+911234567892">+91 12345 67892</a></p><p><a href="mailto:careers@horizonschool.edu">careers@horizonschool.edu</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Stay Connected</span><h2>Follow Us</h2><p>Join our community on social media for the latest updates.</p></div>
+      <div class="social-brands reveal">
+        <a href="#" class="fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="in" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo"><i class="fa-solid fa-graduation-cap"></i> Horizon<span>School</span></a>
+          <p>Inspiring minds and building future leaders since 2005.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div><h4>Quick Links</h4><ul><li><a href="academics.html">Academics</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div><h4>Explore</h4><ul><li><a href="campus.html">Campus</a></li><li><a href="events.html">Events</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Subscribe for school updates and news.</p>
+          <form class="newsletter" data-validate novalidate>
+            <div class="field" style="flex:1"><input type="email" placeholder="Your email" required aria-label="Email" /></div>
+            <button class="btn btn--gold" type="submit">Subscribe</button>
+          </form>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span data-year>2026</span> Horizon International School. All rights reserved. · <a href="#">Privacy Policy</a></div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous">&#10094;</button>
+    <img src="" alt="" />
+    <button class="lightbox__next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="to-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* ==========================================================================
+   animations.css — keyframes + scroll-reveal utilities
+   ========================================================================== */
+
+@keyframes fadeIn   { from { opacity: 0; }                         to { opacity: 1; } }
+@keyframes slideUp  { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes zoomIn   { from { opacity: 0; transform: scale(.9); }   to { opacity: 1; transform: scale(1); } }
+@keyframes ripple   { to   { transform: scale(4); opacity: 0; } }
+@keyframes pulse    {
+  0%   { box-shadow: 0 0 0 0 rgba(255,179,35,.6); }
+  70%  { box-shadow: 0 0 0 22px rgba(255,179,35,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,179,35,0); }
+}
+
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+/* Hero text entrance */
+.hero__badge   { animation: slideUp .7s ease both, floaty 3.5s ease-in-out 1s infinite; }
+.hero__content h1 { animation: slideUp .7s .15s ease both; }
+.hero__content p  { animation: slideUp .7s .3s ease both; }
+.hero__actions    { animation: slideUp .7s .45s ease both; }
+
+/* ---------- Idle icon animations (always running, not hover) ---------- */
+@keyframes iconFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes iconBeat  { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.14); } }
+@keyframes iconWiggle{ 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-8deg); } 75% { transform: rotate(8deg); } }
+
+/* Big circle/tile icons gently float */
+.feature__icon i,
+.activity__ico i,
+.cstat__ico i,
+.approach__item .ico i,
+.contact-card .ico i,
+.doc-item .ico i {
+  animation: iconFloat 3s ease-in-out infinite;
+}
+/* Alternate items wiggle instead, and offset timing for a lively, non-synced feel */
+.grid > *:nth-child(even) .feature__icon i,
+.activities > *:nth-child(even) .activity__ico i,
+.counters__grid > *:nth-child(even) .cstat__ico i,
+.approach__item:nth-child(even) .ico i,
+.doc-item:nth-child(even) .ico i,
+.contact-card:nth-child(even) .ico i {
+  animation-name: iconWiggle; animation-delay: .4s;
+}
+.grid > *:nth-child(3n) .feature__icon i { animation-delay: .8s; }
+.activities > *:nth-child(3n) .activity__ico i { animation-delay: .7s; }
+
+/* Social icons softly beat */
+.footer__social a i,
+.contact-social a i,
+.topbar__social a i,
+.social-brands a i {
+  animation: iconBeat 2.6s ease-in-out infinite;
+}
+.footer__social a:nth-child(even) i,
+.contact-social a:nth-child(even) i,
+.social-brands a:nth-child(even) i { animation-delay: .5s; }
+
+/* Star ratings & section eyebrow sparkle */
+.tslide__stars i { animation: iconBeat 2.8s ease-in-out infinite; }
+.tslide__stars i:nth-child(2) { animation-delay: .15s; }
+.tslide__stars i:nth-child(3) { animation-delay: .3s; }
+.tslide__stars i:nth-child(4) { animation-delay: .45s; }
+.tslide__stars i:nth-child(5) { animation-delay: .6s; }
+
+/* ---------- Scroll reveal ----------
+   Elements get .reveal in markup; JS adds .visible when in view. */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+.reveal--zoom  { transform: scale(.92); }
+.reveal--left  { transform: translateX(-40px); }
+.reveal--right { transform: translateX(40px); }
+
+/* Stagger helper: add inline style --d on children, or these classes */
+.reveal.d1 { transition-delay: .1s; }
+.reveal.d2 { transition-delay: .2s; }
+.reveal.d3 { transition-delay: .3s; }
+.reveal.d4 { transition-delay: .4s; }
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}

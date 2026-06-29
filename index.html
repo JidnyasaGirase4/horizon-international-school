@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon International School — Inspiring Minds, Building Future Leaders</title>
+  <meta name="description" content="Horizon International School — a premier international school offering world-class academics, modern facilities, and holistic student development. Admissions open 2026." />
+  <meta property="og:title" content="Horizon International School" />
+  <meta property="og:description" content="Inspiring Minds, Building Future Leaders. Admissions open 2026." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- 1. TOP HEADER -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__contact">
+        <a href="tel:+911234567890"><i class="fa-solid fa-phone"></i> +91 12345 67890</a>
+        <a class="email" href="mailto:info@horizonschool.edu"><i class="fa-solid fa-envelope"></i> info@horizonschool.edu</a>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badge"><i class="fa-solid fa-bullhorn"></i> Admissions Open 2026</span>
+        <div class="topbar__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. NAVIGATION -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo"><i class="fa-solid fa-graduation-cap"></i> Horizon<span>School</span></a>
+      <nav>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="campus.html">Campus</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-controls="navMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3. HERO -->
+  <section class="hero">
+    <div class="hero__slides">
+      <div class="hero__slide active" style="background-image:url('images/hero-1.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-2.jpg')"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-3.jpg')"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__badge">Admissions Open 2026</span>
+      <h1>Inspiring Minds,<br />Building Future Leaders</h1>
+      <p>A premier international school where academic excellence meets character, creativity and global citizenship.</p>
+      <div class="hero__actions">
+        <a href="admissions.html" class="btn btn--gold"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+        <a href="#tour" class="btn btn--ghost"><i class="fa-solid fa-play"></i> Virtual Tour</a>
+      </div>
+    </div>
+    <div class="hero__dots" aria-label="Hero slides"></div>
+  </section>
+
+  <!-- 4. WHY CHOOSE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why Horizon</span>
+        <h2>Why Choose Our School</h2>
+        <p>An environment built for curiosity, achievement and well-rounded growth.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card feature reveal d1"><div class="feature__icon"><i class="fa-solid fa-chalkboard-user"></i></div><h3>Experienced Faculty</h3><p>Passionate, qualified educators dedicated to every learner.</p></div>
+        <div class="card feature reveal d2"><div class="feature__icon"><i class="fa-solid fa-display"></i></div><h3>Smart Classrooms</h3><p>Technology-enabled rooms for interactive, modern learning.</p></div>
+        <div class="card feature reveal d3"><div class="feature__icon"><i class="fa-solid fa-medal"></i></div><h3>Sports Excellence</h3><p>World-class facilities and coaching across many disciplines.</p></div>
+        <div class="card feature reveal d4"><div class="feature__icon"><i class="fa-solid fa-earth-americas"></i></div><h3>Global Learning</h3><p>An international curriculum that prepares students for the world.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WELCOME -->
+  <section class="section section--gray">
+    <div class="container split">
+      <div class="split__img reveal reveal--left"><img data-src="images/principal.jpg" alt="School principal" width="800" height="600" /></div>
+      <div class="reveal reveal--right">
+        <span class="eyebrow" style="color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;">Welcome</span>
+        <h2>A Message from our Principal</h2>
+        <p>At Horizon, we believe every child carries unlimited potential. Our mission is to nurture that potential through a balance of rigorous academics, creativity and values — preparing confident, compassionate global citizens.</p>
+        <p>We invite you to explore our campus and become part of a community where learning never stops.</p>
+        <p class="signature">— Dr. A. Sharma, Principal</p>
+        <a href="about.html" class="btn btn--outline">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ABOUT (Mission / Vision / Values) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Who We Are</span><h2>Our Foundation</h2></div>
+      <div class="grid grid-2">
+        <div class="card feature reveal d1"><div class="feature__icon"><i class="fa-solid fa-bullseye"></i></div><h3>Our Mission</h3><p>To deliver holistic education that empowers students to lead with knowledge, integrity and empathy.</p></div>
+        <div class="card feature reveal d2"><div class="feature__icon"><i class="fa-solid fa-eye"></i></div><h3>Our Vision</h3><p>To be a globally respected institution shaping future-ready, responsible leaders.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ACADEMIC PROGRAMS -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Academics</span><h2>Academic Programs</h2><p>A strong, continuous learning journey from Grade 1 to Grade 10.</p></div>
+      <div class="grid grid-3">
+        <article class="card reveal d1"><img class="card__img" data-src="images/program-primary.jpg" alt="Primary school, Grades 1 to 5" /><div class="card__body"><h3>Primary · Grades 1–5</h3><p>Activity and inquiry based learning that builds strong literacy, numeracy and curiosity.</p><a href="academics.html" class="link">Learn More →</a></div></article>
+        <article class="card reveal d2"><img class="card__img" data-src="images/program-middle.jpg" alt="Middle school, Grades 6 to 8" /><div class="card__body"><h3>Middle · Grades 6–8</h3><p>Concept mastery, critical thinking and exploration across every subject.</p><a href="academics.html" class="link">Learn More →</a></div></article>
+        <article class="card reveal d3"><img class="card__img" data-src="images/program-secondary.jpg" alt="Secondary school, Grades 9 to 10" /><div class="card__body"><h3>Secondary · Grades 9–10</h3><p>Academic depth and board exam preparation with personalised mentoring.</p><a href="academics.html" class="link">Learn More →</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. LEARNING APPROACH -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">How We Teach</span><h2>Our Learning Approach</h2></div>
+      <div class="approach">
+        <div class="approach__item reveal d1"><div class="ico"><i class="fa-solid fa-flask"></i></div><div><h3>STEM Education</h3><p>Hands-on science, technology, engineering & maths.</p></div></div>
+        <div class="approach__item reveal d2"><div class="ico"><i class="fa-solid fa-robot"></i></div><div><h3>Robotics Lab</h3><p>Coding, automation and design thinking.</p></div></div>
+        <div class="approach__item reveal d3"><div class="ico"><i class="fa-solid fa-laptop-code"></i></div><div><h3>Digital Learning</h3><p>Blended, technology-enabled classrooms.</p></div></div>
+        <div class="approach__item reveal d1"><div class="ico"><i class="fa-solid fa-palette"></i></div><div><h3>Arts</h3><p>Visual and creative expression for every student.</p></div></div>
+        <div class="approach__item reveal d2"><div class="ico"><i class="fa-solid fa-music"></i></div><div><h3>Music</h3><p>Vocal and instrumental programs.</p></div></div>
+        <div class="approach__item reveal d3"><div class="ico"><i class="fa-solid fa-language"></i></div><div><h3>Languages</h3><p>Multilingual fluency and communication.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CAMPUS LIFE -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Campus</span><h2>Campus Life</h2></div>
+      <div class="grid grid-4">
+        <div class="tile reveal"><img data-src="images/library.jpg" alt="Library" /><span class="tile__label">Library</span></div>
+        <div class="tile reveal"><img data-src="images/science-lab.jpg" alt="Science Lab" /><span class="tile__label">Science Lab</span></div>
+        <div class="tile reveal"><img data-src="images/computer-lab.jpg" alt="Computer Lab" /><span class="tile__label">Computer Lab</span></div>
+        <div class="tile reveal"><img data-src="images/playground.jpg" alt="Playground" /><span class="tile__label">Playground</span></div>
+        <div class="tile reveal"><img data-src="images/auditorium.jpg" alt="Auditorium" /><span class="tile__label">Auditorium</span></div>
+        <div class="tile reveal"><img data-src="images/art.jpg" alt="Hostel" /><span class="tile__label">Art Room</span></div>
+        <div class="tile reveal"><img data-src="images/cafeteria.jpg" alt="Cafeteria" /><span class="tile__label">Cafeteria</span></div>
+        <div class="tile reveal"><img data-src="images/medical.jpg" alt="Medical Room" /><span class="tile__label">Medical Room</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. STUDENT ACTIVITIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Beyond Academics</span><h2>Student Activities</h2><p>Where talents are discovered and passions take flight.</p></div>
+      <div class="activities">
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-shoe-prints"></i></span><h3>Dance</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-music"></i></span><h3>Music</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-masks-theater"></i></span><h3>Drama</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-comments"></i></span><h3>Debate</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-futbol"></i></span><h3>Sports</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-code"></i></span><h3>Coding Club</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-camera"></i></span><h3>Photography</h3></div>
+        <div class="activity reveal"><span class="activity__ico"><i class="fa-solid fa-spa"></i></span><h3>Yoga</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ACHIEVEMENTS / COUNTERS -->
+  <section class="section counters">
+    <div class="container">
+      <div class="counters__head reveal"><span class="counters__eyebrow">Our Achievements</span><h2>A Legacy of Excellence</h2></div>
+      <div class="counters__grid">
+        <div class="cstat reveal"><span class="cstat__ico"><i class="fa-solid fa-user-graduate"></i></span><div class="counter__num" data-target="5000" data-suffix="+">0</div><div class="counter__label">Students</div></div>
+        <div class="cstat reveal"><span class="cstat__ico"><i class="fa-solid fa-chalkboard-user"></i></span><div class="counter__num" data-target="250" data-suffix="+">0</div><div class="counter__label">Teachers</div></div>
+        <div class="cstat reveal"><span class="cstat__ico"><i class="fa-solid fa-award"></i></span><div class="counter__num" data-target="100" data-suffix="%">0</div><div class="counter__label">Board Results</div></div>
+        <div class="cstat reveal"><span class="cstat__ico"><i class="fa-solid fa-trophy"></i></span><div class="counter__num" data-target="50" data-suffix="+">0</div><div class="counter__label">Awards</div></div>
+        <div class="cstat reveal"><span class="cstat__ico"><i class="fa-solid fa-star"></i></span><div class="counter__num" data-target="20" data-suffix="+">0</div><div class="counter__label">Years of Excellence</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. ADMISSION PROCESS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Admissions</span><h2>Admission Process</h2><p>Five simple steps to join the Horizon family.</p></div>
+      <div class="timeline">
+        <div class="timeline__step reveal"><div class="timeline__num">1</div><h3>Enquiry</h3><p>Submit an enquiry online or visit our admissions office.</p></div>
+        <div class="timeline__step reveal"><div class="timeline__num">2</div><h3>Campus Visit</h3><p>Tour our facilities and meet our faculty.</p></div>
+        <div class="timeline__step reveal"><div class="timeline__num">3</div><h3>Application</h3><p>Complete the application form with required documents.</p></div>
+        <div class="timeline__step reveal"><div class="timeline__num">4</div><h3>Assessment</h3><p>Student interaction and grade-appropriate assessment.</p></div>
+        <div class="timeline__step reveal"><div class="timeline__num">5</div><h3>Confirmation</h3><p>Receive your offer and confirm admission.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FACILITIES -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Infrastructure</span><h2>World-Class Facilities</h2></div>
+      <div class="grid grid-4">
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-snowflake"></i></div><h3>AC Classrooms</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-chalkboard"></i></div><h3>Smart Boards</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-robot"></i></div><h3>Robotics Lab</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-flask"></i></div><h3>Science Labs</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-computer"></i></div><h3>Computer Labs</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-book"></i></div><h3>Library</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-person-swimming"></i></div><h3>Swimming Pool</h3></div>
+        <div class="card feature reveal"><div class="feature__icon"><i class="fa-solid fa-basketball"></i></div><h3>Indoor Stadium</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Voices</span><h2>What Our Community Says</h2></div>
+      <div class="tslider reveal">
+        <div class="tslider__track">
+          <div class="tslide"><div class="tslide__card">
+            <span class="tslide__mark"><i class="fa-solid fa-quote-right"></i></span>
+            <div class="tslide__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="quote">Horizon gave my daughter both confidence and academic strength. The teachers truly care about every child.</p>
+            <div class="tslide__person"><img data-src="images/person-1.jpg" alt="Parent" /><div><strong>Mrs. Kapoor</strong><span>Parent</span></div></div>
+          </div></div>
+          <div class="tslide"><div class="tslide__card">
+            <span class="tslide__mark"><i class="fa-solid fa-quote-right"></i></span>
+            <div class="tslide__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="quote">The robotics lab and sports facilities are amazing. I love coming to school every single day!</p>
+            <div class="tslide__person"><img data-src="images/person-2.jpg" alt="Student" /><div><strong>Aarav, Grade 9</strong><span>Student</span></div></div>
+          </div></div>
+          <div class="tslide"><div class="tslide__card">
+            <span class="tslide__mark"><i class="fa-solid fa-quote-right"></i></span>
+            <div class="tslide__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="quote">The values and friendships I built at Horizon shaped who I am today. Forever grateful to my school.</p>
+            <div class="tslide__person"><img data-src="images/person-3.jpg" alt="Alumna" /><div><strong>Neha S.</strong><span>Alumna, Batch 2018</span></div></div>
+          </div></div>
+          <div class="tslide"><div class="tslide__card">
+            <span class="tslide__mark"><i class="fa-solid fa-quote-right"></i></span>
+            <div class="tslide__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="quote">A wonderful place to teach. The school invests in its teachers and truly puts children first.</p>
+            <div class="tslide__person"><img data-src="images/principal.jpg" alt="Teacher" /><div><strong>Ms. D'Souza</strong><span>Senior Teacher</span></div></div>
+          </div></div>
+        </div>
+        <div class="tslider__nav" aria-label="Testimonials"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. LATEST NEWS -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Newsroom</span><h2>Latest News</h2><p>Stay updated with the latest happenings at Horizon.</p></div>
+      <div class="news-grid">
+        <article class="news-card reveal">
+          <img class="news-card__img" data-src="images/music.jpg" alt="Annual Day Celebration" />
+          <span class="news-card__date"><span class="d">18</span><span class="m">Dec</span></span>
+          <div class="news-card__overlay">
+            <span class="news-card__cat">School</span>
+            <h3>Annual Day Celebration</h3>
+            <a href="events.html" class="news-card__link">Read More →</a>
+          </div>
+        </article>
+        <article class="news-card reveal">
+          <img class="news-card__img" data-src="images/science-lab.jpg" alt="Science Fair 2026" />
+          <span class="news-card__date"><span class="d">09</span><span class="m">Feb</span></span>
+          <div class="news-card__overlay">
+            <span class="news-card__cat">Academics</span>
+            <h3>Science Fair 2026</h3>
+            <a href="events.html" class="news-card__link">Read More →</a>
+          </div>
+        </article>
+        <article class="news-card reveal">
+          <img class="news-card__img" data-src="images/sports.jpg" alt="Annual Sports Day" />
+          <span class="news-card__date"><span class="d">24</span><span class="m">Nov</span></span>
+          <div class="news-card__overlay">
+            <span class="news-card__cat">Sports</span>
+            <h3>Annual Sports Day</h3>
+            <a href="events.html" class="news-card__link">Read More →</a>
+          </div>
+        </article>
+        <article class="news-card reveal">
+          <img class="news-card__img" data-src="images/playground.jpg" alt="Summer Camp" />
+          <span class="news-card__date"><span class="d">05</span><span class="m">May</span></span>
+          <div class="news-card__overlay">
+            <span class="news-card__cat">Activities</span>
+            <h3>Summer Camp</h3>
+            <a href="events.html" class="news-card__link">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. UPCOMING EVENTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Calendar</span><h2>Upcoming Events</h2></div>
+      <div class="grid grid-2">
+        <div class="event reveal"><div class="event__date"><span class="d">15</span><span class="m">Aug</span></div><div><h3>Independence Day</h3><p>Flag hoisting and cultural performances.</p></div></div>
+        <div class="event reveal"><div class="event__date"><span class="d">22</span><span class="m">Aug</span></div><div><h3>Parent–Teacher Meeting</h3><p>Discuss your child's progress with mentors.</p></div></div>
+        <div class="event reveal"><div class="event__date"><span class="d">05</span><span class="m">Sep</span></div><div><h3>Admission Open House</h3><p>Explore the campus and meet our team.</p></div></div>
+        <div class="event reveal"><div class="event__date"><span class="d">18</span><span class="m">Sep</span></div><div><h3>Robotics Workshop</h3><p>Hands-on session for budding engineers.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. GALLERY -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Moments</span><h2>Gallery</h2></div>
+      <div class="gallery__filters reveal">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="campus">Campus</button>
+        <button data-filter="classroom">Classroom</button>
+        <button data-filter="sports">Sports</button>
+        <button data-filter="events">Events</button>
+        <button data-filter="labs">Labs</button>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item" data-category="campus"><img data-src="images/campus-building.jpg" alt="Campus view" /></div>
+        <div class="gallery__item" data-category="classroom"><img data-src="images/classroom.jpg" alt="Classroom" /></div>
+        <div class="gallery__item" data-category="sports"><img data-src="images/sports.jpg" alt="Sports" /></div>
+        <div class="gallery__item" data-category="events"><img data-src="images/music.jpg" alt="Event" /></div>
+        <div class="gallery__item" data-category="labs"><img data-src="images/science-lab.jpg" alt="Lab" /></div>
+        <div class="gallery__item" data-category="campus"><img data-src="images/library.jpg" alt="Campus" /></div>
+        <div class="gallery__item" data-category="sports"><img data-src="images/playground.jpg" alt="Sports" /></div>
+        <div class="gallery__item" data-category="events"><img data-src="images/art.jpg" alt="Event" /></div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- 19. FAQ -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Help</span><h2>Frequently Asked Questions</h2></div>
+      <div class="faq reveal">
+        <div class="faq__item"><button class="faq__q">What is the admission process? <span class="sign">+</span></button><div class="faq__a"><p>Enquiry, campus visit, application, assessment and confirmation — see our Admissions page for full details.</p></div></div>
+        <div class="faq__item"><button class="faq__q">What is the fee structure? <span class="sign">+</span></button><div class="faq__a"><p>Fees vary by grade. Detailed fee schedules are shared during the admission process and on request.</p></div></div>
+        <div class="faq__item"><button class="faq__q">Is transport available? <span class="sign">+</span></button><div class="faq__a"><p>Yes, we offer GPS-enabled bus services across major routes in the city.</p></div></div>
+        <div class="faq__item"><button class="faq__q">Is there a school uniform? <span class="sign">+</span></button><div class="faq__a"><p>Yes. Uniforms are available through the school store and authorised vendors.</p></div></div>
+        <div class="faq__item"><button class="faq__q">Which curriculum do you follow? <span class="sign">+</span></button><div class="faq__a"><p>We offer an international curriculum complemented by national standards and holistic enrichment.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20. CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Get in Touch</span><h2>Contact Us</h2><p>We'd love to hear from you. Reach out and our team will respond shortly.</p></div>
+      <div class="contact-grid">
+        <div class="reveal reveal--left">
+          <div class="contact-cards">
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-location-dot"></i></span><div><strong>Visit Us</strong><p>123 Education Avenue, Knowledge City, India 400001</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-phone"></i></span><div><strong>Call Us</strong><p>+91 12345 67890</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-envelope"></i></span><div><strong>Email Us</strong><p>info@horizonschool.edu</p></div></div>
+            <div class="contact-card"><span class="ico"><i class="fa-solid fa-clock"></i></span><div><strong>Working Hours</strong><p>Mon–Fri: 8:00 AM – 4:00 PM</p></div></div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="form contact-form reveal reveal--right" data-validate novalidate>
+          <h3>Send us a Message</h3>
+          <div class="row">
+            <div class="field"><label for="cn">Name</label><input id="cn" type="text" required /><span class="error">Please enter your name.</span></div>
+            <div class="field"><label for="ce">Email</label><input id="ce" type="email" required /><span class="error">Enter a valid email.</span></div>
+          </div>
+          <div class="field"><label for="cp">Phone</label><input id="cp" type="tel" /><span class="error">Enter a valid phone number.</span></div>
+          <div class="field"><label for="cm">Message</label><textarea id="cm" required></textarea><span class="error">Please enter a message.</span></div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <iframe class="map reveal" src="https://www.google.com/maps?q=delhi&output=embed" loading="lazy" title="School location map"></iframe>
+    </div>
+  </section>
+
+  <!-- 21. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo"><i class="fa-solid fa-graduation-cap"></i> Horizon<span>School</span></a>
+          <p>Inspiring minds and building future leaders since 2005.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div><h4>Quick Links</h4><ul><li><a href="academics.html">Academics</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div><h4>Explore</h4><ul><li><a href="campus.html">Campus</a></li><li><a href="events.html">Events</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Subscribe for school updates and news.</p>
+          <form class="newsletter" data-validate novalidate>
+            <div class="field" style="flex:1"><input type="email" placeholder="Your email" required aria-label="Email" /></div>
+            <button class="btn btn--gold" type="submit">Subscribe</button>
+          </form>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span data-year>2026</span> Horizon International School. All rights reserved. · <a href="#">Privacy Policy</a></div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous">&#10094;</button>
+    <img src="" alt="" />
+    <button class="lightbox__next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="to-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

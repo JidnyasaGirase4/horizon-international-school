@@ -1,0 +1,187 @@
+==============================================================================
+ SCHOOL WEBSITE — PROJECT REQUIREMENTS
+==============================================================================
+ Project Type : Static Website (Multi-page)
+ Last Updated : 2026-06-27
+ Aesthetic    : Premium international school (inspired by TISB & Canadian
+                International School) — clean white background, blue + gold
+                accents, spacious layouts, rounded cards, subtle shadows.
+==============================================================================
+
+
+------------------------------------------------------------------------------
+ 1. TECHNOLOGY STACK
+------------------------------------------------------------------------------
+- HTML5 (semantic markup)
+- CSS3 (Flexbox / Grid, custom properties)
+- JavaScript (Vanilla — NO frameworks, NO build tools)
+- Fully Responsive, Mobile-First
+- No external runtime dependencies (CDN allowed for fonts/icons only)
+
+
+------------------------------------------------------------------------------
+ 2. TOOLING / EXTERNAL DEPENDENCIES (CDN — optional)
+------------------------------------------------------------------------------
+- Google Fonts: Poppins (body), Playfair Display (headings)
+- Icon set: choose ONE — Font Awesome OR Lucide OR custom SVG in assets/icons/
+- (No package manager required; this is NOT a Node/Python project.)
+
+NOTE: This is a static site, so a real package "requirements" file is not
+needed to run it. This file documents the project requirements/spec instead.
+To preview locally, any static server works, e.g.:
+    python -m http.server 8000
+
+
+------------------------------------------------------------------------------
+ 3. FOLDER STRUCTURE
+------------------------------------------------------------------------------
+School-Website/
+├── index.html
+├── about.html
+├── academics.html
+├── admissions.html
+├── campus.html
+├── gallery.html
+├── events.html
+├── achievements.html
+├── contact.html
+├── css/
+│     style.css
+│     responsive.css
+│     animations.css
+├── js/
+│     script.js        (nav, sticky, mobile menu, scroll-to-top, smooth scroll,
+│                        active nav highlight, scroll reveal, lazy load)
+│     slider.js         (hero slider + testimonial slider)
+│     counter.js        (animated counters)
+│     gallery.js        (filter + lightbox)
+│     form.js           (contact / apply form validation)
+├── images/
+├── videos/
+└── assets/
+      icons/
+      fonts/
+
+
+------------------------------------------------------------------------------
+ 4. DESIGN SYSTEM
+------------------------------------------------------------------------------
+Color Palette
+  Primary Blue    #0F4C81
+  Secondary Gold  #F5B041
+  White           #FFFFFF
+  Light Gray      #F8F9FA
+  Dark Text       #1F2937
+  Accent Green    #22C55E
+
+Fonts
+  Poppins            — body / UI
+  Playfair Display   — headings
+
+Animations
+  Fade In, Slide Up, Zoom In, Image Hover Scale, Card Lift, Number Counter,
+  Smooth Page Scroll, Hero Text Animation, Button Ripple
+
+Responsive Breakpoints
+  Desktop       1920px
+  Laptop        1440px
+  Tablet        1024px
+  Mobile        768px
+  Small Mobile  480px
+
+
+------------------------------------------------------------------------------
+ 5. GLOBAL COMPONENTS (every page)
+------------------------------------------------------------------------------
+- Top header bar: Phone, Email, "Admission Open", social icons
+- Sticky navigation: Logo + Home, About, Academics, Campus, Admissions,
+  Gallery, Events, Contact
+- Mobile hamburger menu
+- Footer: Quick links, social icons, newsletter signup
+- Scroll-to-top button
+
+
+------------------------------------------------------------------------------
+ 6. HOMEPAGE (index.html) — SECTIONS
+------------------------------------------------------------------------------
+ 1. Top Header
+ 2. Navigation Bar (sticky)
+ 3. Hero Banner — fullscreen video/image slider, headline, Apply Now +
+    Virtual Tour buttons
+ 4. Why Choose Our School — 4 hover cards (Faculty, Smart Classrooms,
+    Sports, Global Learning)
+ 5. Welcome Section — image left / content right, Principal message, Read More
+ 6. About School — two columns: Mission, Vision, Core Values
+ 7. Academic Programs — cards: Pre-Primary, Primary, Middle, High,
+    Senior Secondary (image + desc + Learn More)
+ 8. Learning Approach — icons: STEM, Robotics, Digital, Arts, Music, Languages
+ 9. Campus Life — grid: Library, Science Lab, Computer Lab, Playground,
+    Auditorium, Hostel, Cafeteria, Medical Room
+10. Student Activities — cards: Dance, Music, Drama, Debate, Sports, Coding,
+    Photography, Yoga
+11. Achievements — animated counters: 5000+ Students, 250+ Teachers,
+    100% Board Results, 50+ Awards, 20+ Years
+12. Admission Process — 5-step timeline (Enquiry → Visit → Application →
+    Assessment → Confirmation)
+13. Facilities — cards (AC classrooms, smart boards, robotics, labs, library,
+    pool, indoor stadium, outdoor sports, hostel)
+14. Testimonials — slider (parents, students, alumni)
+15. Latest News — cards (Annual Day, Science Fair, Sports Day, Summer Camp)
+16. Upcoming Events — calendar style
+17. Gallery — masonry + lightbox
+18. Virtual Campus Tour — video section with play button
+19. FAQ — accordion
+20. Contact — Google Map, address, phone, email, form
+21. Footer
+
+
+------------------------------------------------------------------------------
+ 7. INNER PAGES
+------------------------------------------------------------------------------
+about.html        Story, Principal Message, Vision, Mission, Core Values,
+                  Leadership Team, Infrastructure, Timeline, Awards, CTA
+academics.html    Curriculum (KG/Primary/Middle/High/Sr Sec), Assessment,
+                  Digital Learning, Library
+admissions.html   Process, Eligibility, Documents, Fee Structure, Scholarship,
+                  FAQ, Apply Form
+campus.html       Smart Classroom, Labs, Library, Hostel, Sports Complex,
+                  Auditorium, Cafeteria, Medical Centre, Transport
+gallery.html      Categories (Campus/Events/Sports/Classroom/Labs/Annual Day),
+                  filter + lightbox
+events.html       Upcoming + Past Events, Annual Function, Sports Day,
+                  Science Exhibition
+achievements.html Board Results, Olympiads, Sports Awards, University
+                  Placements, Alumni Success Stories
+contact.html      Contact Form, Map, Address, Working Hours, Social Media
+
+
+------------------------------------------------------------------------------
+ 8. JAVASCRIPT FEATURES (acceptance checklist)
+------------------------------------------------------------------------------
+[ ] Sticky navbar on scroll
+[ ] Hero image/video slider (auto + manual)
+[ ] Testimonial slider
+[ ] Gallery filter by category
+[ ] Gallery lightbox popup
+[ ] Counter animation on scroll into view
+[ ] Scroll reveal animations
+[ ] FAQ accordion
+[ ] Mobile hamburger menu
+[ ] Scroll-to-top button
+[ ] Contact/apply form validation
+[ ] Smooth scrolling for anchor links
+[ ] Active navigation highlight
+[ ] Lazy loading images
+
+
+------------------------------------------------------------------------------
+ 9. NON-FUNCTIONAL REQUIREMENTS
+------------------------------------------------------------------------------
+- Fully responsive across all 5 breakpoints
+- Accessible: semantic HTML, alt text, ARIA on nav/accordion/lightbox,
+  keyboard-navigable, visible focus states, sufficient color contrast
+- Performance: lazy-loaded images, compressed assets, minimal blocking JS
+- SEO: meta title/description per page, Open Graph tags, descriptive headings
+- Cross-browser: latest Chrome, Firefox, Edge, Safari
+- Graceful fallbacks where video/JS unavailable
+==============================================================================
