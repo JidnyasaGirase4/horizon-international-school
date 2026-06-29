@@ -5,7 +5,7 @@ A fully responsive, multi-page **static school website** built with plain
 reusable design system, animated UI, and interactive components like sliders,
 counters, a filterable gallery, and form validation.
 
-🔗 **Live demo:** _(Netlify link — see below)_
+🔗 **Live demo:** <https://horizon-intl-school-jg.netlify.app>
 
 ---
 
